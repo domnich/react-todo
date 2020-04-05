@@ -4,24 +4,6 @@ import './todo-list-item.css';
 
 export default class TodoListItem extends Component {
 
-
-    onToggleDone = () => {
-        // деструктурировали done из state (как в onMarkImportant)
-        this.setState(( {done} ) => {
-            return {
-                done: !done
-            }
-        });
-    }
-
-    onToggleImportant = () => {
-        this.setState((state) => {
-            return {
-                important: !state.important
-            }
-        });
-    }
-
     render() {
         const {
             label, 
